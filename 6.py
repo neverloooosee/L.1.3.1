@@ -33,6 +33,7 @@ figs = []
 with open('input01.txt', 'r') as f:
     for line in f:
         p = line.split()
+        if not p: continue  
         t, v = p[0], [float(x) for x in p[1:]]
         if t == 'Triangle': figs.append(Triangle(*v))
         elif t == 'Rectangle': figs.append(Rectangle(*v))
