@@ -30,7 +30,7 @@ class Circle:
     def s(self): return math.pi * self.r**2
 
 figs = []
-with open('figures.txt', 'r') as f:
+with open('input01.txt', 'r') as f:
     for line in f:
         p = line.split()
         t, v = p[0], [float(x) for x in p[1:]]
